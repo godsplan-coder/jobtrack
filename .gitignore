@@ -1,0 +1,12 @@
+node_modules/
+dist/
+jobtrack.zip
+.env
+.env.*
+!.env.example
+
+.cph/
+.vscode/
+
+A_Hot_Potatoes_at_the_Fairy_Warehouse.cpp
+C_1_Marenol_easy_version.cpp

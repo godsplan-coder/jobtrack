@@ -1,0 +1,15 @@
+const STATUS_STYLES = {
+  Applied: "bg-blue-100 text-blue-700",
+  Interview: "bg-amber-100 text-amber-700",
+  Offer: "bg-green-100 text-green-700",
+  Rejected: "bg-red-100 text-red-700",
+};
+
+export default function StatusBadge({ status }) {
+  const style = STATUS_STYLES[status] ?? "bg-gray-100 text-gray-700";
+  return (
+    <span className={`text-xs font-medium px-2.5 py-1 rounded-full whitespace-nowrap ${style}`}>
+      {status}
+    </span>
+  );
+}
